@@ -18,13 +18,13 @@ const removeTask = (tasksList, id) => {
   }
 };
 
-const descriptions = getTasksDescriptions(tasks);
+const descriptions = getTasksDescriptions(tasks); 
 console.log(descriptions);
 
-const highPriorityTasks = filterTasksByPriority(tasks, 'alta');
-console.log(highPriorityTasks);
+const priorityTasks = filterTasksByPriority(tasks, 'alta');
+console.log(priorityTasks);
 
-const task = findTaskById(tasks,2);
+const task = findTaskById(tasks, 2);
 console.log(task);
 
 const removedTask = removeTask(tasks, 1);
